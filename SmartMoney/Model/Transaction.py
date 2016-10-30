@@ -6,3 +6,5 @@ class Transaction(object):
         self.amount = amount
         self.date = date
 
+    def __str__(self):
+        return self.name + "({})".format(self.amount)
