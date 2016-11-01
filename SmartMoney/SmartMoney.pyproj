@@ -5,14 +5,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e06475b1-e9f4-45ae-9d9b-4714a79c3c54</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>Model\Main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>SmartMoney</Name>
     <RootNamespace>SmartMoney</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,9 +23,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Model\Main.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Model\FinancialAccount.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Model\relativedelta.py" />
     <Compile Include="Model\Transaction.py">
       <SubType>Code</SubType>
     </Compile>
